@@ -1,6 +1,6 @@
 # ArcGIS Projection Widget
 
-**ArcGIS Projection Widget** is a custom widget for **ArcGIS Web AppBuilder** that allows users to **project and draw points and polygons** directly on the map. The widget supports multiple coordinate systems, including **WGS 84**, **Nord Maroc**, and **Nord Maroc Degrés**, enabling easy integration of diverse coordinate data into your GIS applications.
+**ArcGIS Projection Widget** is a custom widget for **ArcGIS Web AppBuilder- v2.30	** that allows users to **project and draw points and polygons** directly on the map. The widget supports multiple coordinate systems, including **WGS 84**, **Nord Maroc**, and **Nord Maroc Degrés**, enabling easy integration of diverse coordinate data into your GIS applications.
 
 ## Features
 
