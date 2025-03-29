@@ -1,0 +1,25 @@
+
+{
+  "name": "ArcGIS-Projection-Widget",
+  "label": "ArcGIS Projection Widget",
+  "platform": ["HTML"],
+  "version": "1.0",
+  "wabVersion": "2.30",
+  "author": "Reyabi Souhail",
+  "description": "Widget for projecting and drawing points and polygons in different coordinate systems.",
+  "category": "Custom",
+  "properties": {
+    "inPanel": true,
+    "hasConfig": false
+  },
+  "dependencies": {
+    "css": ["widget.css"],
+    "js": ["Widget.js"],
+    "html": ["widget.html"]
+  },
+  "icon": "images/widget-icon.png",
+  "config": {
+    "label": "Projection Widget",
+    "defaultColor": "#003399"
+  }
+}

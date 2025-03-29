@@ -1,0 +1,77 @@
+
+<div class="projeter-widget">
+  <h3>Projeter une Géométrie</h3>
+
+  <label>Système de coordonnées :</label>
+  <select id="crsSelect">
+    <option value="4326">WGS 84</option>
+    <option value="26191">Nord Maroc (X/Y)</option>
+    <option value="26192">Nord Maroc Degrés (X/Y)</option>
+  </select>
+
+  <div class="toggle-group">
+    <label><input type="radio" name="mode" value="point" checked> Point</label>
+    <label><input type="radio" name="mode" value="polygon"> Polygone</label>
+  </div>
+
+  <!-- Section Point -->
+  <div id="pointSection">
+    <label id="xLabel">Longitude :</label>
+    <input id="xCoord" type="text" placeholder="ex: 2.35">
+    <label id="yLabel">Latitude :</label>
+    <input id="yCoord" type="text" placeholder="ex: 48.85">
+
+    <div id="pointOptions">
+      <label>Couleur du point :</label>
+      <input id="pointColor" type="color" value="#003399">
+
+      <label>Taille du point :</label>
+      <input id="pointSize" type="number" min="5" value="12">
+
+      <label>Contour du point :</label>
+      <input id="pointOutlineColor" type="color" value="#000000">
+    </div>
+  </div>
+
+  <!-- Section Polygone -->
+  <div id="polygonSection" style="display:none;">
+    <label>Polygone (format : [[x,y],[x,y],...]) :</label>
+    <textarea id="polygonCoords" rows="3" placeholder="[[[-7.65, 33.57], [-7.58, 33.57], [-7.58, 33.63], [-7.65, 33.63], [-7.65, 33.57]]]"></textarea>
+
+    <div id="polygonOptions">
+      <label>Style du contour :</label>
+      <select id="lineStyle">
+        <option value="solid">Ligne continue</option>
+        <option value="dash">Pointillés</option>
+      </select>
+
+      <label>Couleur du contour :</label>
+      <input id="lineColor" type="color" value="#c0392b">
+
+      <label>Épaisseur du contour :</label>
+      <input id="lineWidth" type="number" min="1" value="2">
+
+      <label>Remplissage :</label>
+      <select id="fillStyle">
+        <option value="transparent">Transparent</option>
+        <option value="color">Avec couleur</option>
+      </select>
+
+      <label>Couleur de remplissage :</label>
+      <input id="fillColor" type="color" value="#e74c3c">
+
+      <label>Transparence :</label>
+      <input id="opacity" type="range" min="0" max="1" step="0.1" value="1">
+    </div>
+  </div>
+
+  <button id="projectAndDraw">Projeter et Dessiner</button>
+
+  <!-- Custom Alert -->
+  <div id="customAlert" class="custom-alert"></div>
+
+  <!-- Liste des entités dessinées -->
+  <div id="entityList">
+    <button id="deleteEntities">Supprimer toutes les entités</button>
+  </div>
+</div>
